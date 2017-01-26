@@ -6,9 +6,9 @@ Synergy is a web application. It is built with [Python][0] using the [Django Web
 
 This project has the following basic apps:
 
-* Dynamic price estimation (short desc)
-* Wattrank System (short desc)
-* Usage Capacity Planning (short desc)
+* Dynamic price estimation 
+* Wattrank System 
+* Usage Capacity Planning 
 
 This documentation is under construction.
 
