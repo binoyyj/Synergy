@@ -63,6 +63,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    'wattrank.apps.WattrankConfig',
     'django.contrib.auth',
     'django_admin_bootstrapped',
     'django.contrib.admin',
