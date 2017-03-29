@@ -3,12 +3,11 @@
 {% load crispy_forms_tags %}
 
 {% block title %}{{ block.super }}Log In{% endblock %}
-
+<img src='/static/bgimg.jpg' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
 {% block form_heading %}Please Log In{% endblock %}
-
 {% block form %}
   {% crispy form %}
-
+  
   <div class="form-message">
     <p>
       Don't have an account? <a href="{% url 'accounts:signup' %}">Sign up</a>.

@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block description %}{% endblock description %}">
-    <meta name="author" content="Arun Ravindran">
-    <link rel="shortcut icon" href="{% static 'site/ico/favicon.ico' %}">
+    <meta name="author" content="Binoy Abhijith Namitha Anju">
+    <link rel="shortcut icon" href="{% static 'site/ico/energy.ico' %}">
 
     <title>{% block title %}{% include "_brandname.html" %} :: {% endblock %}</title>
 
@@ -99,8 +99,13 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>New Project</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        {% if user.is_staff %}
+		Welcome to the admin page {{ user.get_full_name|truncatechars:20 }} 
+	{% else %}
+		Welcome to the consumer page {{ user.get_full_name|truncatechars:20 }} 
+	{% endif %}
+      
+        
       </div>
 
     </div><!-- /.container -->
